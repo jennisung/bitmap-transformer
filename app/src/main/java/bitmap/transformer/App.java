@@ -3,7 +3,33 @@
  */
 package bitmap.transformer;
 
-public class App {
+// List of imports
+import java.io.*;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
 
+public class App {
+    public static void main(String[] args){
+
+// Employ using 'best modularization practices'
+
+// ----- Bitmap.java ------> Contain a Bitmap class (Bitmap.java)
+
+// CLI should require at least three arguments: input-file-path, output-file-path, transform-name
+//        IMPORTANT: to start the program run `./gradlew run --args 'input output transform`
+//        args[0] -> input::input-file-path // args[1] -> output::output-file-path // args[2] -> transform::transform-name
+
+// ----- Bitmap.java ------> CLI support a minimum of three transforms, each of which an instance method in Bitmap class
+//        Color Pallet Txforms: Invert / Black and White (grayscale)
+//        Raster Data Txforms: Rotate
+
+// CLI should log useful error messages if used incorrectly
+
+// CLI should log a success message on completion
+
+
+
+    }
 
 }
