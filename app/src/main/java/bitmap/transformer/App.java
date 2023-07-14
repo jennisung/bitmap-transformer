@@ -7,53 +7,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //Help from chatgbt
 
 package bitmap.transformer;
-
 
 import java.io.IOException;
 
