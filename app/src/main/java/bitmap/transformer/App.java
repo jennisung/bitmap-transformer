@@ -10,9 +10,10 @@ import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 import java.io.IOException;
 
+//Help from chatgbt
 public class App {
-    public static void main(String[] args){
-
+    public static void main(String[] args) {
+            
 // Employ using 'best modularization practices'
 
 // ----- Bitmap.java ------> Contain a Bitmap class (Bitmap.java)
@@ -27,8 +28,9 @@ public class App {
 
 // CLI should log useful error messages if used incorrectly
 
-// CLI should log a success message on completion
-
+// CLI should log a success message on completion      
+      
+      
         if (args.length < 3) {
             System.err.println("Error");
             return;
@@ -46,7 +48,7 @@ public class App {
         } catch (IOException e) {
             System.err.println("Error");
         }
-
     }
-
 }
+
+
