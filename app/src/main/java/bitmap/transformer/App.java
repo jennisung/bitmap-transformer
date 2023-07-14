@@ -10,7 +10,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 import java.io.IOException;
 
-0public class App {
+public class App {
     public static void main(String[] args){
 
 // Employ using 'best modularization practices'
