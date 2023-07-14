@@ -8,8 +8,9 @@ import java.io.*;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
+import java.io.IOException;
 
-public class App {
+0public class App {
     public static void main(String[] args){
 
 // Employ using 'best modularization practices'
@@ -28,7 +29,23 @@ public class App {
 
 // CLI should log a success message on completion
 
+        if (args.length < 3) {
+            System.err.println("Error");
+            return;
+        }
 
+        String inputPath = "src/main/resources/baldy-8bit.bmp";
+        String outputPath = "src/main/resources/output.bmp";
+        String transformMethod = args[2];
+
+        try {
+            Bitmap bitmap = new Bitmap(inputPath);
+            bitmap.applyTransform(transformMethod);
+            bitmap.writeToFile(outputPath);
+            System.out.println("Transform applied: " + outputPath);
+        } catch (IOException e) {
+            System.err.println("Error");
+        }
 
     }
 
